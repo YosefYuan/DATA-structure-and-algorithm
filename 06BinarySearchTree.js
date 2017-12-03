@@ -127,7 +127,7 @@ function BinarySearchTree() {
                     node = null;
                     return node;
                 }
-                
+
                 // 第二种情况——一个只有一个子节点的节点
                 if (node.left === null) {
                     node = node.right;
@@ -138,6 +138,18 @@ function BinarySearchTree() {
                 }
 
                 // 第三种情况——一个有两个子节点的节点
+                function findMinNode(node) {
+                    var minNode = function (node) {
+                        if (node) {
+                            while (node && node.left !== null) {
+                                node = node.left;
+                            }
+                            return node;
+                        }
+                        return null;
+                    };
+                    return minNode(node);
+                };
                 var aux = findMinNode(node.right);
                 node.key = aux.key;
                 node.right = removeNode(node.right, aux.key);

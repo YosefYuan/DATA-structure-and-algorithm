@@ -50,23 +50,23 @@ function Dictionary() {
     }
 }
 
-var dictionary = new Dictionary();
-dictionary.set('name1', 'name1@test.com');
-dictionary.set('name2', 'name2@test.com');
-dictionary.set('name3', 'name3@test.com');
+// var dictionary = new Dictionary();
+// dictionary.set('name1', 'name1@test.com');
+// dictionary.set('name2', 'name2@test.com');
+// dictionary.set('name3', 'name3@test.com');
 
-console.log(dictionary.has('name1'));
-console.log(dictionary.size());
+// console.log(dictionary.has('name1'));
+// console.log(dictionary.size());
 
 
-console.log(dictionary.keys());
-console.log(dictionary.values());
-console.log(dictionary.get('name2'));
+// console.log(dictionary.keys());
+// console.log(dictionary.values());
+// console.log(dictionary.get('name2'));
 
-dictionary.remove('name1');
+// dictionary.remove('name1');
 
-console.log(dictionary.keys());
-console.log(dictionary.values());
-console.log(dictionary.getItems());
+// console.log(dictionary.keys());
+// console.log(dictionary.values());
+// console.log(dictionary.getItems());
 
 
